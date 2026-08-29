@@ -180,7 +180,8 @@ h1,h2,h3{line-height:1.2;margin:0 0 .5em;color:var(--dark-color);letter-spacing:
 .to-top.show{opacity:1;pointer-events:auto}
 
 /* ANIMAÇÃO REVEAL */
-.reveal{opacity:0;transform:translateY(34px);transition:opacity .7s var(--ease),transform .7s var(--ease)}
+.reveal{opacity:0;transform:translateY(24px);transition:opacity .7s ease,transform .7s ease}
+html.no-js .reveal{opacity:1!important;transform:none!important}
 .reveal.in{opacity:1;transform:none}
 @media (prefers-reduced-motion:reduce){
   *{animation:none!important;transition-duration:.01ms!important}
